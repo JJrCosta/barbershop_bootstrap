@@ -46,6 +46,14 @@
         nav .navbar-nav a {
             color: #fff;
         }
+        input.search-bar,
+        span.input-group-text,
+        input.search-bar:focus,
+        input.search-bar::placeholder {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+        }
         .dropdown-menu .dropdown-item:hover {
             background-color: #283040;
             color: #F2AB27;
@@ -87,30 +95,48 @@
         <div class="banner container"></div>
         <div class="navbar navbar-expand-lg border-bottom border-light mt-lg-3 fixed-top">
             <div class="container container-fluid">
-                <a href="#" class="navbar-brand text-light">
+                <a href="#" class="navbar-brand text-light me-5">
                     <img src="./img/logo.png" alt="Barbershop">
                 </a>
+                <div class="input-group w-25 ms-5 border border-light rounded">
+                    <input type="search" class="form-control border-0 search-bar" placeholder="Pesquisar">
+                    <span class="input-group-text"><i class="bi bi-search search-bar text-light"></i></span>
+                </div>
                 <button type="button" class="navbar-toggler bg-warning" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="navbar-collapse collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-light" href="#">Home</a>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Áreas
+                            </a>
+                            <ul class="dropdown-menu rounded-0">
+                                <li><a class="dropdown-item" href="#">Salão principal</a></li>
+                                <li><a class="dropdown-item" href="#">Salão de jogos</a></li>
+                                <li><a class="dropdown-item" href="#">Salão de festas</a></li>
+                                <li><a class="dropdown-item" href="#">Bar e cafeteria</a></li>
+                                <li><a class="dropdown-item" href="#">Livaria</a></li>
+                                <li><a class="dropdown-item" href="#">Cabines</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-light" href="#">Produtos</a>
+                        <li class="nav-item dropdown me-4">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu rounded-0">
+                                <li><a class="dropdown-item" href="#">Pomadas</a></li>
+                                <li><a class="dropdown-item" href="#">Tônicos</a></li>
+                                <li><a class="dropdown-item" href="#">Perfumes</a></li>
+                                <li><a class="dropdown-item" href="#">Talcos</a></li>
+                                <li><a class="dropdown-item" href="#">Próteses capilares</a></li>
+                                <li><a class="dropdown-item" href="#">Fibras</a></li>
+                                <li><a class="dropdown-item" href="#">Roupas</a></li>
+                                <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                                <li><a class="dropdown-item" href="#">Calçados</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-light" href="#">Planos</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-light" href="#">Áreas</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-light" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item dropdown me-5">
+                        <li class="nav-item dropdown me-4">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Serviços
                             </a>
@@ -125,7 +151,13 @@
                                 <li><a class="dropdown-item" href="#">Tatoo</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown me-5">
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-light" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-light" href="#">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item dropdown ms-4">
                             <button class="btn dropdown-toggle btn-lg rounded-0 px-4 fs-3 mt-3 mt-lg-0 font-title fundo-amarelo" id="btn-agendar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-calendar-event"></i>
                                 Agendar
@@ -135,7 +167,6 @@
                                 <li><a class="dropdown-item btn fundo-amarelo btn-lg rounded-0 px-4 font-title" href="#"><i class="bi bi-plus-circle-dotted me-2"></i>Conhecer planos</a></li>
                                 <li><a class="dropdown-item btn fundo-amarelo btn-lg rounded-0 px-4 font-title" href="#"><i class="bi bi-fast-forward me-3"></i>Agendamento rápido</a></li>
                             </ul>
-                        </li>
                     </ul>
                     
                 </nav>
@@ -222,5 +253,6 @@
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
