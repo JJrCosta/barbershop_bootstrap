@@ -1,0 +1,93 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+.font-title {
+    font-family: 'Bebas Neue', cursive;
+}
+.header {
+    position: relative;
+    height: 850px;
+    overflow: hidden;
+}
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image: url('../img/recursos/banner-header.png');
+    background-size: cover;
+    background-position: center center;
+    z-index: -10;
+}
+.container {
+    max-width: 1440px;
+}
+.dropdown-menu .dropdown-item,
+footer .list-group .list-group-item a,
+nav .navbar-nav a,
+footer #redes-sociais li a {
+    color: #fff;
+}
+input.search-bar,
+span.input-group-text,
+input.search-bar:focus,
+input.search-bar::placeholder,
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+.dropdown-menu .dropdown-item:hover,
+footer .list-group .list-group-item:hover a,
+footer #redes-sociais li a:hover {
+    background-color: #283040;
+    color: #F2AB27;
+}
+.cor-cz-escuro {
+    color: #1A1E26;
+}
+.bg-cz-claro {
+    background-color: #283040;
+}
+.bg-cz-escuro {
+    background-color: #1A1E26;
+}
+.bg-amarelo,
+.accordion-button:not(.collapsed)  {
+    background-color: #F2AB27;
+}
+.text-shadow {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.bg-amarelo:hover {
+    background-color: #f2d427;
+    color: #1A1E26;
+}
+.bg-faixa {
+    background: #F2AB27 url('../img/recursos/bg-faixa.png') repeat left top;
+    background-size: contain;
+    text-shadow: 2px 2px 5px #000;
+}
+#planos .card {
+    margin-top: -190px;
+    border: none;
+}
+.card .card-header {
+    color: #fff;
+}
+.card .card-body {
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 1000px) {
+    #planos .card.card-segunda-fila {
+    margin-top: 32px;
+    }
+}
+@media (max-width: 765px) {
+    #planos .card.card-primeira-fila {
+    margin-top: 32px;
+    }
+}
