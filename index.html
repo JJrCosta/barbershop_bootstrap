@@ -81,15 +81,43 @@
                             Agendar
                         </button>
                         <ul class="dropdown-menu rounded-0 bg-cz-claro">
-                            <li><a class="dropdown-item btn bg-amarelo btn-lg rounded-0 px-4 font-title" href="#"><i class="bi bi-door-open-fill me-3"></i>LOGIN</a></li>
-                            <li><a class="dropdown-item btn bg-amarelo btn-lg rounded-0 px-4 font-title" href="#"><i class="bi bi-plus-circle-dotted me-2"></i>Conhecer planos</a></li>
-                            <li><a class="dropdown-item btn bg-amarelo btn-lg rounded-0 px-4 font-title" href="#"><i class="bi bi-fast-forward me-3"></i>Agendamento rápido</a></li>
+                            <li><button class="dropdown-item btn bg-amarelo btn-lg rounded-0 px-4 font-title" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-door-open-fill me-3"></i>LOGIN</button></li>
+                            <li><button class="dropdown-item btn bg-amarelo btn-lg rounded-0 px-4 font-title"><i class="bi bi-plus-circle-dotted me-2"></i>Conhecer planos</button></li>
+                            <li><button class="dropdown-item btn bg-amarelo btn-lg rounded-0 px-4 font-title"><i class="bi bi-fast-forward me-3"></i>Agendamento rápido</button></li>
                         </ul>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog text-light">
+            <div class="modal-content rounded-0 bg-cz-claro">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="exampleModalLabel">LOGIN</h1>
+                    <button type="button" class="btn-close bg-amarelo rounded-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <form class="w-75 py-2">
+                        <div class="py-2">
+                            <label class="form-label" for="emailUsuario">Email</label>
+                            <input class="form-control rounded-0" type="email">
+                        </div>
+                        <div class="py-2">
+                            <label class="form-label" for="senhaUsuario">Senha</label>
+                            <input class="form-control rounded-0" type="password" maxlength="12">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center flex-column">
+                    <button type="button" class="btn btn-primary rounded-0 bg-amarelo border-0 cor-cz-escuro px-5 py-2 fw-bold mb-3">ENTRAR</button>
+                    <a href="#" class="text-light">Criar uma conta</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section class="mb-5 bg-cz-escuro" id="planos">
