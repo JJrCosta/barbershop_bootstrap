@@ -71,7 +71,8 @@ footer #redes-sociais li a:hover {
     background-size: contain;
     text-shadow: 2px 2px 5px #000;
 }
-#planos .card {
+#planos .card,
+#cadastro {
     margin-top: -190px;
     border: none;
 }
